@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blitzapp-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: blitzapp
+  template:
+    metadata:
+      labels:
+        app: blitzapp
+    spec:
+      containers:
+        - name: blitzapp
+          image: blitzapp:latest
+          ports:
+            - containerPort: 3000
