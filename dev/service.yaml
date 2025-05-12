@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: blitzapp-service-dev
+  name: workoutapi-service-dev
   labels:
-    app: blitzapp
+    app: workoutapi
     environment: dev
 spec:
   selector:
-    app: blitzapp
+    app: workoutapi
   ports:
     - protocol: TCP
       port: 80
