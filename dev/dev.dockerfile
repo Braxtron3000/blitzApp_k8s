@@ -1,11 +1,12 @@
 RUN echo '0'
-
 # Use an official Node.js image as a base
 FROM node:20
 RUN echo '1'
 
+RUN echo "$PWD"
+
 # Set the working directory
-WORKDIR /app
+WORKDIR /workout-api
 # Comment
 RUN echo '2'
 # Copy package files and install dependencies
