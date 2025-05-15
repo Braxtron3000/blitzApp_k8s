@@ -1,5 +1,3 @@
-RUN echo '0'
-# Use an official Node.js image as a base
 FROM node:20
 RUN echo '1'
 
